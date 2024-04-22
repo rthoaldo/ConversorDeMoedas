@@ -8,7 +8,7 @@ import java.util.Scanner;
 
 public class Conversor {
 
-    private static final String API_KEY = "c99110905aa186b0d56430d3";
+    private static final String API_KEY = "API_KEY"; //colocar aqui a chave da api
 
     public static void main(String[] args) {
         try (Scanner scanner = new Scanner(System.in)) {
@@ -90,7 +90,7 @@ public class Conversor {
     }
 
     private static double getTaxaDeCambio(String moedaOrigem, String moedaDestino) throws IOException {
-        //String urlStr = "https://v6.exchangerate-api.com/v6/c99110905aa186b0d56430d3/latest/" + moedaOrigem;
+        //String urlStr = "https://v6.exchangerate-api.com/v6/API_KEY/latest/" + moedaOrigem;
         //String urlStr = "https://v6.exchangerate-api.com/v6/"+ API_KEY +"/latest/" + moedaOrigem; //+ "&symbols=" + moedaDestino;
         URI uri = URI.create("https://v6.exchangerate-api.com/v6/" + API_KEY + "/latest/" + moedaOrigem);
         URL url = uri.toURL();
